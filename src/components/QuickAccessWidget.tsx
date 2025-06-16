@@ -10,7 +10,7 @@ interface QuickItem {
 }
 
 const mainShortcuts: QuickItem[] = [
-  { name: 'LeetCode', url: 'https://leetcode.com', icon: 'https://avatars.githubusercontent.com/u/41718343?s=280&v=4', color: '', isImageIcon: true },
+  { name: 'LeetCode', url: 'https://leetcode.com/problemset/', icon: 'https://avatars.githubusercontent.com/u/41718343?s=280&v=4', color: '', isImageIcon: true },
   { name: 'GeeksforGeeks', url: 'https://geeksforgeeks.org', icon: 'https://play-lh.googleusercontent.com/ZI21NMObsjB7DbPU_EXRymHJL3HQpfsrB2N4CWb-diXm4xjl_13mmetYQZvcpgGf-64', color: '', isImageIcon: true },
   { name: 'Striver Sheets', url: 'https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/', icon: 'https://yt3.googleusercontent.com/ytc/AIdro_mdPFTT7VuJHQkvzW9gjJxvSV3bBDpEVNw8dWOmHjTT5g=s900-c-k-c0x00ffffff-no-rj', color: '', isImageIcon: true },
   { name: 'ChatGPT', url: 'https://chat.openai.com', icon: 'https://static.vecteezy.com/system/resources/previews/021/059/825/non_2x/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.jpg', color: '', isImageIcon: true },
@@ -20,7 +20,7 @@ const mainShortcuts: QuickItem[] = [
   { name: 'IamNEO', url: 'https://placement.skcet.ac.in', icon: 'https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/pvsx2nwkbl4wyb1yzgfa', color: '', isImageIcon: true },
   { name: 'Amypo', url: 'https://skcet.amypo.com', icon: 'https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/pvsx2nwkbl4wyb1yzgfa', color: '', isImageIcon: true },
   { name: 'YouTube', url: 'https://youtube.com', icon: 'https://static.vecteezy.com/system/resources/previews/023/986/704/non_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png', color: '', isImageIcon: true },
-  { name: 'Netflix', url: 'https://netflix.com', icon: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg', color: '', isImageIcon: true },
+  { name: 'Netflix', url: 'hhttps://www.netflix.com/browse', icon: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg', color: '', isImageIcon: true },
   { name: 'JioHotstar', url: 'https://www.hotstar.com', icon: 'https://play-lh.googleusercontent.com/bp4jknyVZ8yDKhER9thIS1p9MBeU2LABqBX-sO8uaL1h5_keqlgMUmXv-CjfRWaqKw', color: '', isImageIcon: true },
   { name: 'Google Apps', url: '#', icon: 'https://images.icon-icons.com/2717/PNG/512/dots_nine_icon_173868.png', color: '', isImageIcon: true },];
 
