@@ -15,20 +15,18 @@ const DailyQuote: React.FC = () => {
   }, []);
 
   const fetchQuote = async () => {
-  setLoading(true);
-  try {
-    const response = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://zenquotes.io/api/random'));
-    const result = await response.json();
-    const data = JSON.parse(result.contents); // parse the JSON inside the string
-    setQuote({ content: data[0].q, author: data[0].a });
-  } catch (error) {
-    console.error("Failed to fetch quote:", error);
-    setQuote({ content: "Unable to fetch quote right now.", author: "System" });
-  } finally {
-    setLoading(false);
-  }
-};
-
+    setLoading(true);
+    try {
+      const response = await fetch('https://api.quotable.io/random');
+      const data = await response.json();
+      setQuote({ content: data.content, author: data.author });
+    } catch (error) {
+      console.error('Failed to fetch quote:', error);
+      setQuote({ content: 'Unable to fetch quote right now.', author: 'System' });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="bg-slate-800/40 backdrop-blur-sm rounded-2xl p-2 border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300 col-span-2 h-[130px]">
@@ -56,9 +54,10 @@ const DailyQuote: React.FC = () => {
         </div>
       ) : (
         <div className="text-center">
-          <p className="text-white text-lg mb-4 leading-relaxed italic">"{quote.content}"<p className="text-slate-400 text-sm font-medium">
-            — {quote.author}</p></p>
-          
+          <p className="text-white text-lg mb-4 leading-relaxed italic">
+            "{quote.content}"
+            <p className="text-slate-400 text-sm font-medium">— {quote.author}</p>
+          </p>
         </div>
       )}
     </div>
