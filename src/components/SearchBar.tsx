@@ -104,7 +104,7 @@ const SearchBar: React.FC = () => {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search the web..."
+          placeholder="ALL HAIL RATIK"
           className="flex-1 bg-transparent px-4 py-3 text-white placeholder-slate-400 focus:outline-none"
         />
 
