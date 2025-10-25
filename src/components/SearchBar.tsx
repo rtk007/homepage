@@ -18,6 +18,11 @@ const searchEngines = [
     icon: 'https://brave.com/static-assets/images/brave-favicon.png',
   },
   {
+    name: 'Opera',
+    url: 'https://search.opera.com/search?q=',
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Opera_2015_icon.svg/800px-Opera_2015_icon.svg.png',
+  },
+  {
     name: 'DuckDuckGo',
     url: 'https://duckduckgo.com/?q=',
     icon: 'https://duckduckgo.com/favicon.ico',
